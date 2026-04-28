@@ -77,11 +77,11 @@
     line-height: 16px;
     border-radius: 5px;
     border: 1px solid $blue-accent;
+    transition: 0.3s;
 
     &:hover {
       background-color: #fff;
       color: $blue-accent;
-      transition: 0.3s;
     }
   }
 }
