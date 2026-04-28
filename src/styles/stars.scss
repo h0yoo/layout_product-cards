@@ -1,0 +1,36 @@
+.stars {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+
+  &__items {
+    display: flex;
+  }
+
+  &__item {
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+
+    background-image: url('../images/star.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  &__reviews {
+    margin-left: auto;
+
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  &--1 &__item:nth-child(-n + 1),
+  &--2 &__item:nth-child(-n + 2),
+  &--3 &__item:nth-child(-n + 3),
+  &--4 &__item:nth-child(-n + 4),
+  &--5 &__item:nth-child(-n + 5) {
+    background-image: url('../images/star-active.svg');
+  }
+}
